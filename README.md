@@ -1,7 +1,5 @@
 Test Task for the position of Frontend Developer
 
-[live demo](https://mdyasenrafe.github.io/test-task/)
-
 ## Installation
 
 ```bash
@@ -17,4 +15,4 @@ yarn install
 yarn  start
 ```
 
-[live demo](https://mdyasenrafe.github.io/test-task/)
+[live demo](https://test-task-five-topaz.vercel.app/)
