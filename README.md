@@ -14,7 +14,7 @@ yarn install
 
 ```bash
 # development
-$ yarn  start
+yarn  start
 ```
 
 [live demo](https://mdyasenrafe.github.io/test-task/)
