@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import { selectData } from "../utils/data/SelectData";
+import { Toast } from "../components/common/Toast";
 
 export default function Home() {
   const [formData, setFormData] = useState({});
@@ -21,7 +22,12 @@ export default function Home() {
     } else {
       localStorage.setItem("formData", JSON.stringify([formData]));
     }
+
     setFormData({});
+    Toast.fire({
+      icon: "success",
+      title: "Data saved successfully",
+    });
   };
 
   return (
