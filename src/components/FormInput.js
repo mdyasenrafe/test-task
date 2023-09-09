@@ -1,7 +1,13 @@
 import React from "react";
 import { selectData } from "../utils/data/SelectData";
 
-export default function FormInput({ handleChange, handleSubmit, formData }) {
+export default function FormInput({
+  handleChange,
+  handleSubmit,
+  formData,
+  checked,
+  setChecked,
+}) {
   return (
     <form className="mt-4" onSubmit={handleSubmit}>
       <div>
@@ -45,8 +51,8 @@ export default function FormInput({ handleChange, handleSubmit, formData }) {
           type="checkbox"
           name="agreeToTerms"
           required
-          onChange={handleChange}
-          checked={formData?.agreeToTerms}
+          checked={checked}
+          onChange={(e) => setChecked(e.target.checked)}
         />
         <span className="ml-2">Agree to terms</span>
       </label>
