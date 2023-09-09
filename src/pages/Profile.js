@@ -27,8 +27,8 @@ export default function () {
       key: "name",
       AlignType: "center",
       textWrap: "wrap",
-      // sorter will be asending adn descending
-      sorter: (a, b) => a.name.length - b.name.length,
+      // sorter will be asc or desc
+      sorter: (a, b) => a.name.localeCompare(b.name),
     },
     {
       title: "Sector",
@@ -36,7 +36,7 @@ export default function () {
       key: "sector",
       AlignType: "center",
       textWrap: "wrap",
-      sorter: (a, b) => a.sector.length - b.sector.length,
+      sorter: (a, b) => a.sector.localeCompare(b.sector),
     },
     {
       title: "Action",
